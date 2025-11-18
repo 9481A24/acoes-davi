@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MEGA GUIA COMPLETO DE TRADER GRÁFICO - Para Iniciantes</title>
+  <meta name="description" content="Guia completo e longo para estudar análise gráfica, estratégias, risco e rotina de estudos. Ideal para iniciantes e para transformar em PDF ou site no GitHub." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#fbbf24;--muted:#94a3b8;--text:#e6eef8}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, 'Helvetica Neue', Arial;background:linear-gradient(180deg,#020617 0%, #071028 100%);color:var(--text);}
+    .wrap{max-width:1100px;margin:28px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    header .brand{font-size:20px;font-weight:700;color:var(--accent)}
+    .lead{color:var(--muted);margin-top:6px}
+    nav.toc{margin-top:18px;background:rgba(255,255,255,0.03);padding:14px;border-radius:12px}
+    nav.toc ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px}
+    nav.toc a{color:var(--text);text-decoration:none;display:block;padding:8px;border-radius:8px}
+    nav.toc a:hover{background:rgba(255,255,255,0.02)}
+    main{margin-top:20px}
+    section.card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px;margin-bottom:14px}
+    h2{color:var(--accent);margin:0 0 8px 0}
+    h3{margin:10px 0 6px 0;color:#fff}
+    p{color:var(--text);line-height:1.5}
+    .example{background:rgba(255,255,255,0.02);padding:10px;border-left:4px solid var(--accent);margin:12px 0;border-radius:6px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    aside{background:rgba(255,255,255,0.02);padding:14px;border-radius:12px}
+    footer{margin-top:18px;color:var(--muted);font-size:14px}
+    code{background:rgba(255,255,255,0.03);padding:2px 6px;border-radius:4px}
+    .btn{display:inline-block;background:var(--accent);color:#061021;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600}
+    @media (max-width:960px){.grid{grid-template-columns:1fr}nav.toc ul{grid-template-columns:1fr}}
+    /* print */
+    @media print{body{background:#fff;color:#000}header,nav.toc,footer,aside{display:none}section.card{page-break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="brand">MEGA GUIA - Trader Gráfico</div>
+        <div class="lead">Guia longo e didático para estudar análise gráfica — pronto para transformar em site ou PDF.</div>
+      </div>
+      <div style="margin-left:auto"><a class="btn" href="#toc">Ir para Sumário</a></div>
+    </header>
+
+    <nav id="toc" class="toc">
+      <strong>Sumário — clique para navegar</strong>
+      <ul>
+        <li><a href="#introducao">1. Introdução ao Mercado Financeiro</a></li>
+        <li><a href="#ser-trader">2. O que é ser Trader</a></li>
+        <li><a href="#velas">3. Gráfico de Velas</a></li>
+        <li><a href="#tendencias">4. Tendências</a></li>
+        <li><a href="#suportes">5. Suporte e Resistência</a></li>
+        <li><a href="#reversao">6. Padrões de Reversão</a></li>
+        <li><a href="#continuacao">7. Padrões de Continuação</a></li>
+        <li><a href="#indicadores">8. Indicadores Técnicos</a></li>
+        <li><a href="#estrategias">9. Estratégias para Iniciantes</a></li>
+        <li><a href="#risco">10. Gerenciamento de Risco</a></li>
+        <li><a href="#psico">11. Psicologia do Trader</a></li>
+        <li><a href="#treinar">12. Como treinar sem dinheiro</a></li>
+        <li><a href="#exercicios">13. Exercícios intensivos</a></li>
+        <li><a href="#rotina">14. Rotina de Estudo</a></li>
+        <li><a href="#extra">15. Conteúdo Avançado</a></li>
+        <li><a href="#glossario">Glossário</a></li>
+        <li><a href="#recursos">Recursos e Ferramentas</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato / Sobre</a></li>
+      </ul>
+    </nav>
+
+    <main class="grid">
+      <div>
+        <section id="introducao" class="card">
+          <h2>1. INTRODUÇÃO AO MERCADO FINANCEIRO</h2>
+          <p>O mercado financeiro é um ecossistema onde ativos são comprados e vendidos — ações, índices, moedas, commodities e criptomoedas. Existe um preço para cada ativo e esse preço muda conforme oferta e demanda. Este guia explica com calma como esses movimentos aparecem nos gráficos e como o trader pode estudar e operar.</p>
+
+          <h3>1.1 O que é o mercado</h3>
+          <p>Explicação sobre bolsas, corretoras, provedores de liquidez e participantes (pessoas físicas, bancos, fundos, market makers).</p>
+
+          <h3>1.2 Como o preço se movimenta</h3>
+          <p>Micro e macro fatores: notícias econômicas, resultados, fluxo de ordens e sentimento. Exercício: acompanhar notícia do dia e ver reação no gráfico.</p>
+        </section>
+
+        <section id="ser-trader" class="card">
+          <h2>2. O QUE É SER TRADER</h2>
+          <p>Trader opera no curto prazo — scalping, day trade, swing. Cada estilo tem regras e necessidades distintas de capital, disciplina e tempo disponível.</p>
+
+          <h3>2.1 Tipos de traders</h3>
+          <ul>
+            <li><strong>Scalper</strong>: entradas rápidas, muitas por dia.</li>
+            <li><strong>Day trader</strong>: fecha posições no mesmo dia.</li>
+            <li><strong>Swing trader</strong>: segura dias ou semanas.</li>
+            <li><strong>Position</strong>: semanas a meses (mais próximo do investidor).</li>
+          </ul>
+        </section>
+
+        <section id="velas" class="card">
+          <h2>3. O GRÁFICO DE VELAS (CANDLES)</h2>
+          <p>As velas mostram abertura, fechamento, máxima e mínima em um período. Aprender a ler candles é essencial.</p>
+
+          <h3>3.1 Anatomia da vela</h3>
+          <p>Corpo, sombras (pavios), força relativa entre vela verde e vermelha. Exercício: em 100 candles, marque 20 velas que mostram rejeição (pin bars, martelos).</p>
+
+          <h3>3.2 Tempo gráfico e sua importância</h3>
+          <p>Escolha do timeframe: 15 minutos recomendado para aprendizado prático. Multi-tempo é obrigatório: sempre checar o contexto em timeframes maiores (1h, 4h, diário).</p>
+        </section>
+
+        <section id="tendencias" class="card">
+          <h2>4. TENDÊNCIAS</h2>
+          <p>Tendência é o norte do mercado — alta, baixa ou lateral. Compreender estrutura de topos e fundos é básico.</p>
+
+          <h3>4.1 Identificar tendência</h3>
+          <p>Desenhar linhas de tendência, confirmar topos/fundos e usar médias móveis como suporte dinâmico.</p>
+        </section>
+
+        <section id="suportes" class="card">
+          <h2>5. SUPORTE E RESISTÊNCIA</h2>
+          <p>Zonas onde preço para e frequentemente reage. Técnicas para desenhar corretamente: zonas, múltiplos toques, volume de confirmação.</p>
+
+          <h3>5.1 Zonas e não linhas</h3>
+          <p>Marcar áreas com 1-2% de variação em vez de linhas finas. Use timeframes superiores para confirmar força da zona.</p>
+        </section>
+
+        <section id="reversao" class="card">
+          <h2>6. PADRÕES DE REVERSÃO</h2>
+          <p>Lista e explicação visual de padrões como fundo duplo, topo duplo, martelo, enforcado, engolfo e pin bar. Para cada padrão: identificação, contexto ideal e exemplo de entrada/stop.</p>
+
+          <div class="example">
+            <strong>Exemplo:</strong> Fundo Duplo (W) — identificar as duas bases, confirmar volume no segundo fundo e entrar quando romper a resistência formada entre os dois fundos.</div>
+        </section>
+
+        <section id="continuacao" class="card">
+          <h2>7. PADRÕES DE CONTINUAÇÃO</h2>
+          <p>Explicação de bandeiras, triângulos, canais e como operar rompimentos e retestes. Regras de gestão – se o rompimento tem volume e reteste limpo, conside entrar.</p>
+        </section>
+
+        <section id="indicadores" class="card">
+          <h2>8. INDICADORES TÉCNICOS</h2>
+          <p>Indicadores são ferramentas auxiliares — não mágicas. Use-os para confirmar setup e não para definir sozinho as entradas.</p>
+
+          <h3>8.1 Médias móveis</h3>
+          <p>MM9, MM20, MM50 e MM200: curto, médio e longo prazo. Cruzamento, suporte dinâmico e filtro de tendência.</p>
+
+          <h3>8.2 RSI e MACD</h3>
+          <p>RSI para identificar sobrecompra/sobrevenda. MACD para medir força e momentum.</p>
+
+          <h3>8.3 Volume e VWAP</h3>
+          <p>Volume confirma rompimentos. VWAP mostra preço médio ponderado — útil para intraday.</p>
+        </section>
+
+        <section id="estrategias" class="card">
+          <h2>9. ESTRATÉGIAS PARA INICIANTES</h2>
+          <p>Estratégias simples com regras claras, checklist de entrada e exemplos práticos para 15 minutos.</p>
+
+          <h3>9.1 Compra no suporte</h3>
+          <p>Regra: preço toca suporte + candle de rejeição + volume normal ou crescente → entrada. Stop abaixo da zona. Take profit em resistência ou R:R mínimo 1:1.5.</p>
+
+          <h3>9.2 Venda na resistência</h3>
+          <p>Mesma lógica invertida. Evitar operar contra forte tendência em timeframes maiores.</p>
+
+          <h3>9.3 Rompimento com reteste</h3>
+          <p>Rompimento falso (fakeout) é comum; aguardar fechamento e reteste para confirmar.</p>
+        </section>
+
+        <section id="risco" class="card">
+          <h2>10. GERENCIAMENTO DE RISCO</h2>
+          <p>O pilar do trading — tamanho da posição, stop loss, alavancagem consciente e controle emocional.</p>
+
+          <h3>10.1 Regras práticas</h3>
+          <ul>
+            <li>Risco máximo por operação: 1% a 2% da banca</li>
+            <li>Não mais de 3 operações simultâneas (dependendo do capital)</li>
+            <li>Stop obrigatório</li>
+          </ul>
+
+          <h3>10.2 Calculadora de posição (exemplo)</h3>
+          <p>Fórmula: Tamanho da posição = (Valor em risco) / (Distância do stop em pontos). Exemplo prático no TradingView ou calculadora simples.</p>
+        </section>
+
+        <section id="psico" class="card">
+          <h2>11. PSICOLOGIA DO TRADER</h2>
+          <p>Como emoções afetam decisões: ganância, medo, overtrading. Técnicas de mentalidade: diário, metas pequenas, pausas programadas.</p>
+        </section>
+
+        <section id="treinar" class="card">
+          <h2>12. COMO TREINAR SEM COLOCAR DINHEIRO</h2>
+          <p>Contas demo, replay do TradingView, marcação manual e backtesting. Cada semana, compile os setups e calcule taxa de acerto.</p>
+        </section>
+
+        <section id="exercicios" class="card">
+          <h2>13. EXERCÍCIOS PARA ELE TREINAR POR HORAS</h2>
+          <p>Exercícios intensivos que somam centenas de horas se repetidos.</p>
+          <ol>
+            <li>Marcar 50 suportes e 50 resistências em timeframes diferentes.</li>
+            <li>Encontrar 100 velas de reversão e anotar contexto.</li>
+            <li>Fazer 200 simulações (replay) em 15min e anotar resultado.</li>
+            <li>Estudar 1 ativo por semana e criar relatório semanal.</li>
+          </ol>
+        </section>
+
+        <section id="rotina" class="card">
+          <h2>14. ROTINA DE ESTUDO</h2>
+          <p>Planos diários, semanais e mensais para transformar teoria em prática.</p>
+
+          <h3>14.1 Rotina diária (1 hora)</h3>
+          <ol>
+            <li>10min — Revisar suportes/resistências</li>
+            <li>10min — Confirmar tendência</li>
+            <li>10min — Estudo de candles</li>
+            <li>15min — Prática no replay</li>
+            <li>15min — Anotar e refletir</li>
+          </ol>
+
+          <h3>14.2 Rotina semanal</h3>
+          <p>Estudar 1 padrão, revisar trades da semana, ajustar regras.</p>
+
+          <h3>14.3 Rotina mensal</h3>
+          <p>Revisão ampla, avaliar evolução da banca simulada, definir metas do próximo mês.</p>
+        </section>
+
+        <section id="extra" class="card">
+          <h2>15. CONTEÚDO EXTRA — AVANÇADO</h2>
+          <p>Tópicos para evoluir depois do básico: liquidez, volatilidade, smart money concepts, tape reading, market structure, ordem institucional e execução algorítmica.</p>
+
+          <h3>15.1 Liquidez & Volatilidade</h3>
+          <p>Como medir com indicadores e interpretar movimentos bruscos (gaps).</p>
+
+          <h3>15.2 Smart Money & Order Flow</h3>
+          <p>Conceitos e leitura—como identificar acúmulo e distribuição por players maiores.</p>
+
+          <h3>15.3 Análise de fluxo (Tape Reading)</h3>
+          <p>Leitura de ordens em tempo real — necessita ferramentas específicas e prática intensiva.</p>
+        </section>
+
+        <section id="glossario" class="card">
+          <h2>GLOSSÁRIO</h2>
+          <dl>
+            <dt>Stop Loss</dt>
+            <dd>Ordem que limita prejuízo.</dd>
+            <dt>Take Profit</dt>
+            <dd>Ordem que define saída no lucro.</dd>
+            <dt>Alavancagem</dt>
+            <dd>Uso de margem para aumentar exposição (aumenta risco).</dd>
+            <dt>Volume</dt>
+            <dd>Quantidade negociada em um período.</dd>
+          </dl>
+        </section>
+
+        <section id="recursos" class="card">
+          <h2>RECURSOS E FERRAMENTAS</h2>
+          <ul>
+            <li>TradingView — gráficos e replay</li>
+            <li>Corretoras com conta demo</li>
+            <li>Planilhas para diário de trading (Google Sheets)</li>
+            <li>Livros recomendados (lista curta)</li>
+          </ul>
+        </section>
+
+        <section id="faq" class="card">
+          <h2>FAQ — PERGUNTAS FREQUENTES</h2>
+          <p><strong>P:</strong> Qual o melhor timeframe?<br><strong>R:</strong> Para começar, 15 minutos. Use 1h e diário para contexto.</p>
+          <p><strong>P:</strong> Quanto tempo para aprender?<br><strong>R:</strong> Depende; com rotina intensa, meses. Com prática constante, você verá melhora em semanas.</p>
+        </section>
+
+        <section id="contato" class="card">
+          <h2>CONTATO / SOBRE</h2>
+          <p>Material criado para estudo. Se quiser, posso converter este site em um arquivo HTML pronto para subir no GitHub Pages ou gerar um PDF estilizado.</p>
+          <p><a class="btn" href="#" onclick="alert('Pronto! Para baixar: clique com direito e salvar como...')">Gerar / Baixar HTML</a></p>
+        </section>
+      </div>
+
+      <aside>
+        <h3>Rápido — Plano de Aulas (30 dias)</h3>
+        <ol>
+          <li>Semana 1: Fundamentos e velas</li>
+          <li>Semana 2: Suportes, resistências e padrões</li>
+          <li>Semana 3: Estratégias, indicadores e risco</li>
+          <li>Semana 4: Backtest intenso e revisão</li>
+        </ol>
+
+        <h3>Dicas para o professor / pai</h3>
+        <ul>
+          <li>Comece com 30 minutos por dia</li>
+          <li>Mostre exemplos práticos no TradingView</li>
+          <li>Recompense a consistência, não só os resultados</li>
+        </ul>
+
+        <h3>Checklist de segurança</h3>
+        <ul>
+          <li>Nunca usar dinheiro real sem simulação</li>
+          <li>Evitar alavancagem alta enquanto aprende</li>
+          <li>Manter registro das operações</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© MEGA GUIA - Conteúdo educativo. Use com responsabilidade.</div>
+        <div style="color:var(--muted)">Pronto para GitHub Pages • Impressão otimizada</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
